@@ -1,0 +1,40 @@
+create database student;
+create table primary_details
+(
+first_name varchar(30) not null,
+last_name varchar(30) not null,
+qualification varchar(10) not null
+);
+create table personal_details
+(
+age int not null,
+city varchar(12) not null,
+state varchar(10) not null
+);
+SHOW COLUMNS FROM primary_details;
+SHOW FIELDS FROM primary_details;
+SHOW COLUMNS FROM personal_details;
+SHOW FIELDS FROM personal_details;
+create database employee;
+SHOW TABLES;
+SHOW DATABASES;
+create table details
+(
+name varchar(20) not null,
+gender varchar(6) not null,
+city varchar(10) not null,
+salary int not null
+);
+show columns from details;
+show fields from details;
+create database production;
+create table p_details
+(
+workers_no int not null,
+starting_time float not null
+);
+show columns from p_details;
+show fields from p_details;
+drop table personal_details;
+select * from personal_details;
+
