@@ -1,0 +1,17 @@
+CREATE DATABASE first_db;
+SELECT DATABASE();
+CREATE TABLE myfriends
+(
+    last_name   VARCHAR(15) NOT NULL,
+    first_name  VARCHAR(15) NOT NULL,
+    suffix      VARCHAR(5) NULL,
+    gender  VARCHAR(1) NULL,
+    city        VARCHAR(20) NOT NULL,
+    state       VARCHAR(20) NOT NULL,
+    age     int
+);
+
+DESCRIBE myfriends;
+insert into myfriends values('mahalingam','ranjitha',null,'f','dindigul','tamilnadu','20');
+select first_name,last_name from myfriends;
+select * from myfriends;
